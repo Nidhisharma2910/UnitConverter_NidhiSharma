@@ -52,7 +52,7 @@ class FrequencyActivity : AppCompatActivity() {
         displayResult(conversionResult)
     }
 
-    private fun calculateConversion(value: Double, fromUnit: Int, toUnit: Int): Double {
+    private fun calculateConversion(value: Double, toUnit: Int, fromUnit: Int): Double {
         // Implement your conversion logic here for each unit type
         when (fromUnit) {
             0 -> {

@@ -2,14 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="fuschiaColor">#ff1493</color>
+    <color name="fuschiaColor">#FFC0CB</color>
     <color name="infoBlueColor">#2f70e1</color>
-    <color name="raspberryColor">#872657</color>
-    <color name="backgroundColor">#5B198F</color>
-    <color name="cardColor">#AF17A4</color>
+    <color name="raspberryColor">#3EB489</color>
+    <color name="backgroundColor">#a4c639</color>
+    <color name="cardColor">#add8e6</color>
     <color name="mandarinColor">#f79137</color>
     <color name="coolPurpleColor">#8c5de4</color>
     <color name="bananaColor">#e5e33a</color>
-    <color name="brickRedColor">#971b10</color>
-    <color name="maroonColor">#50041c</color>
+    <color name="brickRedColor">#68a0b0</color>
+    <color name="maroonColor">#FFA500</color>
+<!--    <color name="backgroundColor">#5B198F</color>-->
+<!--    <color name="cardColor">#AF17A4</color>-->
 </resources>

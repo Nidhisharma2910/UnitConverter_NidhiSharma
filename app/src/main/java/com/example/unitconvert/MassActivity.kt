@@ -3,6 +3,7 @@ package com.example.unitconvert
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.widget.ArrayAdapter
@@ -54,11 +55,13 @@ class MassActivity : AppCompatActivity() {
         displayResult(conversionResult)
     }
 
-    private fun calculateConversion(value: Double, fromUnit: Int, toUnit: Int): Double {
+    private fun calculateConversion(value: Double,toUnit : Int, fromUnit: Int): Double {
         // Implement your conversion logic here for each unit type
         when (fromUnit) {
             0 -> {
+                Log.d("meow","1st unit kilogram $value")
                 return calculateKilogramToOther(value, toUnit)
+
             }
             1 -> {
                 return calculateGramToOther(value, toUnit)
@@ -93,7 +96,7 @@ class MassActivity : AppCompatActivity() {
     private fun calculateKilogramToOther(value: Double, toUnit: Int): Double {
         return when (toUnit) {
             0 -> value // Kilogram to Kilogram
-            1 -> value * 1000 // Kilogram to Gram
+            1 -> value * 1000 // kilogram to gram
             2 -> value * 0.001 // Kilogram to Metric Ton
             3 -> value * 0.000984207 // Kilogram to Long Ton
             4 -> value * 0.00110231 // Kilogram to Short Ton
