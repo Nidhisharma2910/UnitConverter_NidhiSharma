@@ -6,10 +6,8 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Toast
-import androidx.appcompat.widget.Toolbar
 import com.example.unitconvert.databinding.ActivityLengthBinding
 import java.text.DecimalFormat
-import android.widget.Spinner
 import com.google.android.material.R
 
 
@@ -53,11 +51,11 @@ class LengthActivity : AppCompatActivity() {
         val fromUnitPosition = binding.spinnerFrom.selectedItemPosition
         val toUnitPosition = binding.spinnerTo.selectedItemPosition
 
-        val conversionResult = calculateConversion(inputLength, toUnitPosition, fromUnitPosition)
+        val conversionResult = calculateConversion(inputLength, fromUnitPosition, toUnitPosition)
         displayResult(conversionResult)
     }
 
-    private fun calculateConversion(value: Double, fromUnit: Int, toUnit: Int): Double {
+    private fun calculateConversion(value: Double, toUnit: Int, fromUnit: Int): Double {
         var meter = 0.0
         when (fromUnit) {
             0 -> meter = value // meter

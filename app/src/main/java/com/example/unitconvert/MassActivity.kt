@@ -59,7 +59,6 @@ class MassActivity : AppCompatActivity() {
         // Implement your conversion logic here for each unit type
         when (fromUnit) {
             0 -> {
-                Log.d("meow","1st unit kilogram $value")
                 return calculateKilogramToOther(value, toUnit)
 
             }
