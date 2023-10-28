@@ -38,6 +38,10 @@ class MainActivity : AppCompatActivity() {
         binding.massCardView.setOnClickListener {
             startActivity(Intent(this, MassActivity::class.java))
         }
+        binding.speedCardView.setOnClickListener {
+            startActivity(Intent(this, SpeedActivity::class.java))
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

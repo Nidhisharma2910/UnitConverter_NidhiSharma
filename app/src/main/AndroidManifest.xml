@@ -39,6 +39,12 @@
         <activity
         android:name=".AreaActivity"
         android:exported="false" />
+        <activity
+            android:name=".SpeedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TemperatureActivity"
+            android:exported="false" />
 
         <activity
             android:name=".MainActivity"

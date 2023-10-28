@@ -170,6 +170,38 @@
                 android:textSize="32sp"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/speed_cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="@color/cardColor"
+            app:cardMaxElevation="10dp"
+            app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/speed"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/speed"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="25dp"
+                />
+        </androidx.cardview.widget.CardView>
+
     </GridLayout>
 </LinearLayout>
 </ScrollView>
